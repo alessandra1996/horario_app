@@ -4,7 +4,8 @@ from .models import registrado
 # Register your models here.
 class Adminregistrado(admin.ModelAdmin):
     list_display =["__str__","nombre","timestamp","actualizado"]
+   # form = registradoform
     class Meta:
-        model = registrado
+       model = registrado
 
 admin.site.register(registrado,Adminregistrado)        
